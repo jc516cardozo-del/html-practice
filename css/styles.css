@@ -1,7 +1,62 @@
-body {
-  background-color: black;
+/* ===== Base ===== */
+* {
+  box-sizing: border-box;
 }
 
-h1 {
-  color: lime;
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #0f172a;
+  color: #e5e7eb;
+}
+
+/* ===== Layout ===== */
+.container {
+  max-width: 900px;
+  margin: 32px auto;
+  padding: 0 16px;
+}
+
+/* ===== Header ===== */
+.site-header {
+  border-bottom: 1px solid #1f2937;
+  padding: 20px 0;
+}
+
+.site-header h1 {
+  margin: 0;
+}
+
+.site-nav {
+  margin-top: 10px;
+}
+
+.site-nav a {
+  margin-right: 15px;
+  color: #93c5fd;
+  text-decoration: none;
+}
+
+.site-nav a:hover {
+  text-decoration: underline;
+}
+
+/* ===== Cards ===== */
+.card {
+  background: #111827;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+/* ===== Text ===== */
+.muted {
+  color: #9ca3af;
+}
+
+/* ===== Mobile ===== */
+@media (max-width: 600px) {
+  .container {
+    padding: 0 12px;
+  }
 }
